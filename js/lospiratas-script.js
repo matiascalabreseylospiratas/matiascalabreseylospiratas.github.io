@@ -98,3 +98,15 @@ jQuery(function($) {
     });
     
 });
+
+
+var sendMail = function(){
+    var link = "mailto:maticalabrese22@gmail.com"
+        +"?cc=jm.rua.gutierrez@outlook.com"
+        +"&subject="+ escape("He visitado matiascalabreseylospiratas.com")
+        +"&body="+  escape('name = '+document.getElementById('contact_name').value)+ " -- " +
+        			escape('name = '+document.getElementById('contact_email').value)+ " -- " +
+                    escape('email = '+document.getElementById('contact_subject').value)+" -- "+
+                    escape('message = '+document.getElementById('contact_message').value);
+    window.location.href = link;
+};
