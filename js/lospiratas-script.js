@@ -102,7 +102,6 @@ jQuery(function($) {
 
 var sendMail = function(){
     var link = "mailto:maticalabrese22@gmail.com"
-        +"?cc=jm.rua.gutierrez@outlook.com"
         +"&subject="+ escape("He visitado matiascalabreseylospiratas.com")
         +"&body="+  escape('nombre = '+document.getElementById('contact_name').value)+ " -- " +
         			escape('email = '+document.getElementById('contact_email').value)+ " -- " +
